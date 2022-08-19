@@ -137,4 +137,16 @@
       sha256 = "611bb273cd68f3b993fabdc4064fc858c5b47a973cb5aa7999ec1ba405c87cd7";
     };
   });
+
+
+  eventlet = super.eventlet.overridePythonAttrs (oldAttrs: {
+    doCheck = false;
+    doInstallCheck = false;
+  });
+  
+  uvloop = super.uvloop.overridePythonAttrs (oldAttrs: {
+    doCheck = false;
+    doInstallCheck = false;
+  });
+
 }
