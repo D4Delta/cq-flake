@@ -72,7 +72,7 @@
           #   packageOverrides = py-overrides;
           #   self = python;
           # }).overrideAttrs (oldAttrs: { disallowedReferences = []; }));
-          python = pkgs.python38.override {
+          python = pkgs.python310.override {
             packageOverrides = py-overrides;
             self = python;
           };
