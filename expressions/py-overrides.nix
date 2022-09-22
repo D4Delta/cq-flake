@@ -149,4 +149,8 @@
     doInstallCheck = false;
   });
 
+  astor = super.astor.overridePythonAttrs (oldAttrs: {
+    doCheck = false;
+    doInstallCheck = false;
+  });
 }

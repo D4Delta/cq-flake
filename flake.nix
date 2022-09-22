@@ -5,11 +5,11 @@
     nixpkgs.url = github:NixOS/nixpkgs/nixos-unstable;
     flake-utils.url = "github:numtide/flake-utils";
     cadquery-src = {
-      url = "github:CadQuery/cadquery/803a05e78c233fdb537a8604c3f2b56a52179bbe";
+      url = "github:CadQuery/cadquery";
       flake = false;
     };
     cq-editor-src = {
-      url = "github:CadQuery/CQ-editor/4b461fe195d0a4e99b9a6c43b7e1fe0cb4c5e77d";
+      url = "github:CadQuery/CQ-editor";
       flake = false;
     };
     ocp-src = {
@@ -72,7 +72,7 @@
           #   packageOverrides = py-overrides;
           #   self = python;
           # }).overrideAttrs (oldAttrs: { disallowedReferences = []; }));
-          python = pkgs.python38.override {
+          python = pkgs.python310.override {
             packageOverrides = py-overrides;
             self = python;
           };

@@ -7,13 +7,13 @@
 }:
 buildPythonPackage rec {
   pname = "cq-kit";
-  rev = "b7212f0cbdf4ce5353330cc96917088615bcb0dc";
+  rev = "f5820c67030f14ae8e387872ae859ad023983c8e";
   version = "git-" + builtins.substring 0 7 rev;
   src = fetchFromGitHub {
     owner = "michaelgale";
     repo = pname;
     inherit rev;
-    sha256 = "sha256-AnvlmbOQrCLFRhndCnp6gTpmpA8w0X6Ze657W4BmAdo=";
+    sha256 = "sha256-cWJD7+fZ5QzbsmO3Zj/gYhy15z21JG/vV3nETsgVeC4=";
     fetchSubmodules = true;
   };
 
